@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="containerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.pa.jlogo_110944.View.MainFXController">
+    <MenuBar layoutY="1.0">
+        <Menu mnemonicParsing="false" text="Game">
+            <MenuItem mnemonicParsing="false" onAction="#handleNewGame" text="StartNew" />
+         <MenuItem fx:id="exportCommands" mnemonicParsing="false" onAction="#handleExportCommands" text="Export Commands" />
+         <MenuItem fx:id="loadCommands" mnemonicParsing="false" onAction="#handleLoadCommands" text="Load Commands" />
+            <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Close" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+        </Menu>
+    </MenuBar>
+   <Pane fx:id="innerPane" layoutX="14.0" layoutY="54.0" prefHeight="299.0" prefWidth="288.0" />
+   <Button fx:id="nextButton" layoutX="131.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="32.0" prefWidth="54.0" text="Next" />
+   <Button fx:id="skipButton" layoutX="191.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleSkipButton" prefHeight="32.0" prefWidth="54.0" text="Skip" />
+   <Button fx:id="resultButton" layoutX="249.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleResultButton" prefHeight="32.0" prefWidth="62.0" text="Result" />
+   <TextArea fx:id="executedCommandsTextArea" layoutX="319.0" layoutY="76.0" prefHeight="278.0" prefWidth="225.0" />
+   <Label fx:id="executedCommandsLabel" layoutX="376.0" layoutY="46.0" text="Executed Commands" />
+</Pane>

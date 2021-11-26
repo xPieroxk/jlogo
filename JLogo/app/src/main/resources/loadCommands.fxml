@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.pa.jlogo_110944.View.LoadCommandsController">
+   <Button layoutX="106.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="94.0" text="Cancel" />
+   <Button layoutX="163.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleLoadFromFile" prefHeight="25.0" prefWidth="134.0" text="Load From File" />
+   <Button layoutX="14.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleWriteCommands" prefHeight="25.0" prefWidth="143.0" text="Write Commands" />
+</Pane>
